@@ -1,0 +1,40 @@
+
+<div class="container">
+    <h1 class="title">Timecard</h1>
+    <p class="description">Track your work hours and manage your timecard here.</p>
+    <p class="test">This is a test</p>
+</div>
+
+<div>
+    <h1>Products</h1>
+    <p *ngFor="let product of products">{{ product.name }}</p>
+</div>
+
+
+<div [formGroup]="form">
+    <input type="text" formControlName="name">
+    <input type="number" formControlName="price">
+    <input type="text" formControlName="description">
+    <label for="country">Select Country:</label>
+  <select formControlName="country">
+    <option value="US">US</option>
+    <option value="UK">UK</option>
+    <option value="CA">CA</option>
+    <option value="AU">AU</option>
+    <option value="NZ">NZ</option>
+    <option value="ZA">ZA</option>
+    <option value="IN">IN</option>
+  </select>
+
+    <button (click)="addProduct()">Add Product</button>
+</div>
+
+
+
+
+
+<!-- <div class="page-container">
+  <h1>Timecard</h1>
+  <p>Track your work hours and manage your timecard here.</p>
+  <button onclick="history.back()">← Back to Dashboard</button>
+</div> -->
