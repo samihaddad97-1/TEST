@@ -3,6 +3,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-timecard',
+  standalone: false,
   templateUrl: './timecard.html',
   styleUrl: './timecard.scss'
 })

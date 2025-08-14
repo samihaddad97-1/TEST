@@ -8,7 +8,7 @@ export const routes: Routes = [
   { path: 'dashboard', component: Dashboard },
   { 
     path: 'timecard', 
-    loadChildren: () => import('./timecards/timecards.module').then(m => m.TimecardsModule)
+    loadChildren: () => import('./timecards/timecards-module').then(m => m.TimecardsModule)
   },
   { path: 'form', component: FormComponent },
   { path: 'scheduling', component: SchedulingComponent },
